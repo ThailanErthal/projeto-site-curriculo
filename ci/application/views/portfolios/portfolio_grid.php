@@ -1,4 +1,5 @@
-<section class="page-section bg-light" id="portfolio">
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Currículos</h2>
@@ -68,3 +69,4 @@
                 </div>
             </div>
         </section>
+

@@ -22,7 +22,7 @@
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/ci/site/';
+$config['base_url'] = 'http://localhost/ci/';
 
 /*
 |--------------------------------------------------------------------------
@@ -232,7 +232,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'ec7117851c0e5dbaad4effdb7cd17c050cea88cb';
 
 /*
 |--------------------------------------------------------------------------
