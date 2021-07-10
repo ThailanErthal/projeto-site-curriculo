@@ -11,20 +11,17 @@ class Projeto extends MY_Controller { //A classe sempre deve ter o mesmo nome do
 		
 		$this->render('index');
 	}
-		public function process()  
-    {  
+    public function process(){  
+        $this->load->model('execusoes_banco');
         $user = $this->input->post('login');  
-        $pass = $this->input->post('senha');  
-        if ($user=='juhi' && $pass=='123')   
-        {  
-            //declaring session  
-            $this->session->set_userdata(array('user'=>$user));  
-			$this->render('index');  
+        $pass = $this->input->post('senha');
+        $res = $this->execusoes_banco->login($user, $pass);
+        if ($res == true){  
+            $this->render('index');
         }  
         else{  
-            $data['error'] = 'Your Account is Invalid';  
 			echo  'Your Account is Invalid';
-        }  
+        }
     }
 
 	}
