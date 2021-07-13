@@ -22,7 +22,7 @@
                     <div class="close-modal" data-bs-dismiss="modal"><img src="<?php echo base_url('assets/img/close-icon.svg')?>" alt="Close modal" /></div>
                     <div class="container login">
                         <div class="row">
-                            <form class="box" name = "login" method = "post" action="<?php echo site_url('projeto/process'); ?>">  >
+                            <form class="box" name = "login" method = "post" action="<?php echo site_url('projeto/login'); ?>">  >
                                 <h1>Login</h1>
                                 <p class="text-muted"> Entre com seu usuário e senha!</p> 
                                 <input type="text" name="login" placeholder="Nome de usuário">
@@ -35,8 +35,7 @@
                     </div>
                     <div class="container cadastro">
                         <div class="row">
-                            <form onsubmit="event.preventDefault()" class="box" name = "cadastro"
-			method = "post">
+                            <form class="box" name = "cadastro" method = "post" action="<?php echo site_url('projeto/cadastro'); ?>">>
                                 <h1>Cadastro</h1>
                                 <p class="text-muted"> Faça o seu cadastro!</p> 
                                 <input type="text" name="user" placeholder="Nome de usuário">

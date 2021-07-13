@@ -11,7 +11,7 @@ class Projeto extends MY_Controller { //A classe sempre deve ter o mesmo nome do
 		
 		$this->render('index');
 	}
-    public function process(){  
+    public function login(){  
         $this->load->model('execusoes_banco');
         $user = $this->input->post('login');  
         $pass = $this->input->post('senha');
@@ -23,7 +23,20 @@ class Projeto extends MY_Controller { //A classe sempre deve ter o mesmo nome do
 			echo  'Your Account is Invalid';
         }
     }
+    public function cadastro(){
+    $this->load->model('execusoes_banco');
+    $user = $this->input->post('user');  
+    $email = $this->input->post('email');    
+    $data = $this->input->post(null, true);
+    $res = $this->execusoes_banco->cadastro($data, $user, $email);
+    if ($res == true){  
+        echo 'id salvo';
+    }  
+    else{  
+        echo  'conta existente';
+        }
+    }
 
-	}
+}
 
 
