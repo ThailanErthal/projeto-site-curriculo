@@ -16,8 +16,13 @@ class Projeto extends MY_Controller { //A classe sempre deve ter o mesmo nome do
         $user = $this->input->post('login');  
         $pass = $this->input->post('senha');
         $res = $this->execusoes_banco->login($user, $pass);
-        if ($res == true){  
-            $this->render('index');
+        $userdata = Array(
+            'usuario' => $user, 
+            'senha' => $pass
+        );
+        if ($res == true){
+            $this->session->set_userdata($userdata);
+            $this->render('index_logout');
         }  
         else{  
 			echo  'Your Account is Invalid';
@@ -37,6 +42,23 @@ class Projeto extends MY_Controller { //A classe sempre deve ter o mesmo nome do
         }
     }
 
+    public function logout(){
+
+        $this->session->sess_destroy();
+        $this->render('index');
+
+    }
+
+    public function contato(){
+        $this->load->model('execusoes_banco');  
+        $data = $this->input->post(null, true);
+        $res = $this->execusoes_banco->contato($data);
+
+        $this->index();
+    }
+
+
 }
+
 
 

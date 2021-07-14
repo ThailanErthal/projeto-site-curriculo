@@ -30,4 +30,11 @@ class Execusoes_banco extends CI_ModeL {
 		return $this->db->insert_id();
 	endif;
 	}
+
+	function contato(array $data = null){
+		$this->db->get('login_cadastro');
+		$this->db->insert('contato', $data);
+		return $this->db->insert_id();
+	}
+
 }
