@@ -5,15 +5,15 @@ $(document).ready(function(){
 
     $('.criar-conta').click(function(){
 
-        $('.cadastro').show("slow");
-        $('.login').hide("slow");
+        $('.cadastro').show("fast");
+        $('.login').fadeout("fast");
 
     })
 
     $('.fazer-login').click(function(){
 
-        $('.cadastro').hide("slow");
-        $('.login').show("slow");
+        $('.cadastro').hide("fast");
+        $('.login').show("fast");
 
     })
 

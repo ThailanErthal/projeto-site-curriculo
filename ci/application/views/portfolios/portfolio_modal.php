@@ -61,7 +61,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Thailan Chiele Erthal</h2>
                                     <br>
-                                    <a href="<?php echo base_url('assets/cv/ALLANcv.pdf')?>" download> <img class="img-fluid d-block mx-auto" src="<?php echo base_url('assets/img/portfolio/1.jpg')?>" alt="..."/> </a>
+                                    <a href="<?php echo base_url('assets/cv/ThailanCv.pdf')?>" download> <img class="img-fluid d-block mx-auto" src="<?php echo base_url('assets/img/portfolio/3.jpg')?>" alt="..."/> </a>
                                     <p><strong>Clique na imagem para realizar o download do curriculo!</strong></p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
@@ -86,7 +86,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Thomas Dahlin Dias Schuster</h2>
                                     <br>
-                                    <a href="<?php echo base_url('assets/cv/ALLANcv.pdf')?>" download> <img class="img-fluid d-block mx-auto" src="<?php echo base_url('assets/img/portfolio/1.jpg')?>" alt="..."/> </a>
+                                    <a href="<?php echo base_url('assets/cv/ThomasCV.pdf')?>" download> <img class="img-fluid d-block mx-auto" src="<?php echo base_url('assets/img/portfolio/4.jpg')?>" alt="..."/> </a>
                                     <p><strong>Clique na imagem para realizar o download do curriculo!</strong></p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>

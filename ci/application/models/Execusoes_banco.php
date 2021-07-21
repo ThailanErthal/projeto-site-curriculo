@@ -7,7 +7,7 @@ class Execusoes_banco extends CI_ModeL {
 	}
 
     function login($user, $pass){
-		$this->db->where('user',$user);
+		$this->db->where('user', $user);
 		$this->db->where('senha', $pass);
 		$query = $this->db->get('login_cadastro', 1);
 	

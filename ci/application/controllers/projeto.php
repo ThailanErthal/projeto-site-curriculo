@@ -57,6 +57,7 @@ class Projeto extends MY_Controller { //A classe sempre deve ter o mesmo nome do
         $res = $this->execusoes_banco->contato($data);
 
         $this->index();
+        echo "<script>alert('Mensagem enviada! Aguarde que retornaremos o seu contato.')</script>";
     }
 
 
