@@ -1,3 +1,4 @@
+
         <!-- Portfolio item 1 modal popup-->
 <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -14,7 +15,7 @@
                                     <p><strong>Clique na imagem para realizar o download do curriculo!</strong></p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Fechar Projeto
                                     </button>
                                 </div>
                             </div>
@@ -39,7 +40,7 @@
                                     <p><strong>Clique na imagem para realizar o download do curriculo!</strong></p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Fechar Projeto
                                     </button>
                                 </div>
                             </div>
@@ -64,7 +65,7 @@
                                     <p><strong>Clique na imagem para realizar o download do curriculo!</strong></p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Fechar Projeto
                                     </button>
                                 </div>
                             </div>
@@ -89,7 +90,7 @@
                                     <p><strong>Clique na imagem para realizar o download do curriculo!</strong></p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Fechar Projeto
                                     </button>
                                 </div>
                             </div>

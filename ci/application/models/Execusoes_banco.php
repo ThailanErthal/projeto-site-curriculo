@@ -26,7 +26,6 @@ class Execusoes_banco extends CI_ModeL {
             return false; 		
 	else:
 		$this->db->insert('login_cadastro',$data);
-		var_dump($data);
 		return $this->db->insert_id();
 	endif;
 	}

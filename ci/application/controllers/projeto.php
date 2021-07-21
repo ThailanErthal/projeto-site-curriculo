@@ -17,15 +17,15 @@ class Projeto extends MY_Controller { //A classe sempre deve ter o mesmo nome do
         $pass = $this->input->post('senha');
         $res = $this->execusoes_banco->login($user, $pass);
         $userdata = Array(
-            'usuario' => $user, 
-            'senha' => $pass
-        );
+            'usuario' => $user 
+            );
         if ($res == true){
             $this->session->set_userdata($userdata);
             $this->render('index_logout');
         }  
         else{  
-			echo  'Your Account is Invalid';
+            $this->render('index');
+            echo "<script> alert('Usuário ou senha incorreto!'); </script>";
         }
     }
     public function cadastro(){
@@ -35,10 +35,12 @@ class Projeto extends MY_Controller { //A classe sempre deve ter o mesmo nome do
     $data = $this->input->post(null, true);
     $res = $this->execusoes_banco->cadastro($data, $user, $email);
     if ($res == true){  
-        echo 'id salvo';
+        $this->render('index');
+        echo "<script> alert('Cadastro realizado com sucesso!'); </script>";
     }  
     else{  
-        echo  'conta existente';
+        $this->render('index');
+        echo "<script> alert('Usuário ou email já registrado!'); </script>";
         }
     }
 

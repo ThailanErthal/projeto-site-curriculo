@@ -10,10 +10,7 @@
 
         <!-- Contact-->
         <?php include "base/contato.php"?>
-
-        <!-- Portfolio Modals-->
-        <?php include "portfolios/portfolio_modal.php"?>
-
+        
         <!-- login pop-up -->
 
         <div class="login-modal modal fade" id="loginPage" tabindex="-1" role="dialog" aria-hidden="true">

@@ -1,4 +1,9 @@
-
+        <?php if( !$this->session->userdata( 'usuario' ) ) 
+            {
+                show_error('Sessão não validada', 403);
+            } 
+        ?>
+        
         <!-- Navigation-->
         <?php include "base/navegacao-logout.php"?>
         
@@ -12,6 +17,7 @@
         <?php include "base/contato.php"?>
 
         <!-- Portfolio Modals-->
+       
         <?php include "portfolios/portfolio_modal.php"?>
 
         <!-- login pop-up -->
@@ -50,3 +56,4 @@
                 </div>
             </div>
         </div>
+        <script> window.alert("Logado com sucesso!"); </script>
